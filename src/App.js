@@ -15,7 +15,7 @@ import './App.css';
 
 const App = () => {
 const [posts, setPosts] = useState(DummyData)
-const [search] = useState('')
+const [search, setSearch] = useState('')
 
   // Create a state called `posts` to hold the array of post objects, **initializing to dummyData**.
   // This state is the source of truth for the data inside the app. You won't be needing dummyData anymore.
@@ -39,10 +39,15 @@ const [search] = useState('')
 
   };
 
+  const changeInput = (evt) => {
+    // const {search} = evt.target
+    setSearch(evt.target.value)
+  }
+
   return (
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
-      <SearchBar search={search}/>
+      <SearchBar search={search} changeInput={changeInput}/>
       <Posts likePost={likePost} posts={posts}/>
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
