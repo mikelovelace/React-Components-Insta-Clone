@@ -54,6 +54,36 @@ const dummyData = [
             },
         ],
     },
+    {
+        id: 3,
+        username: "reddit",
+        thumbnailUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fblog.flashrouters.com%2Fwp-content%2Fuploads%2F2018%2F08%2Frq36kl1xjxr011.png%3Fssl%3D1&f=1&nofb=1',
+        imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.playstationlifestyle.net%2Fassets%2Fuploads%2F2021%2F02%2FDiablo-2-resurrected-diablo-ii-resurrected-remastered-remake-remaster.png&f=1&nofb=1',
+        likes: 8907,
+        timestamp: "June 12th 2021, 06:32:01 pm",
+        comments: [
+            {
+                id: 40,
+                username: "mike",
+                text: "hi, this is a comment",
+            },
+            {
+                id: 41,
+                username: "mario",
+                text: "Its a me, mario",
+            },
+            {
+                id: 42,
+                username: "luigi",
+                text: "Yoyoyoyo sup yo",
+            },
+            {
+                id: 43,
+                username: "bowser",
+                text: "I hate princess peach",
+            },
+        ],
+    },
 ];
 
 export default dummyData;
